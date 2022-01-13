@@ -1,0 +1,67 @@
+nav, 
+#menu_checkbox {
+    display: none;
+}
+
+#menu_checkbox:checked ~ nav {
+    display: block;
+}
+
+header {
+    background-color: #688EA6;
+    color: #fff;
+    padding: 10px;
+    align-items: center;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    background: #688EA6;
+    color: #fff;
+    top: 0px;
+    left: 0px;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+
+@media (min-width: 600px){
+    nav {
+        display: block;
+        position: static;
+    }
+
+    .hamburger_icon {
+    display: none;
+    }
+
+    nav a {
+    display: inline-block;
+    }
+}
+
+/* Home page */ 
+
+.welcome {
+    background-image: url("../images/homepage-background.jpg");
+    min-height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.welcome__content {
+    color: #fff;
+    top: 100px;
+}
+
+.cta {
+    color: #fff;
+    text-transform: uppercase;
+    
+}
