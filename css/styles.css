@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 nav, 
 #menu_checkbox {
     display: none;
@@ -29,7 +33,6 @@ nav a {
     padding: 10px 20px;
 }
 
-
 @media (min-width: 600px){
     nav {
         display: block;
@@ -45,6 +48,7 @@ nav a {
     }
 }
 
+
 /* Home page */ 
 
 .welcome {
@@ -53,15 +57,25 @@ nav a {
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+    background-position: center;
+    color: #fff;
 }
 
-.welcome__content {
-    color: #fff;
-    top: 100px;
+.welcome_content {
+    position: relative;
+    top: 130px;
+    text-align: center;
 }
 
 .cta {
     color: #fff;
     text-transform: uppercase;
-    
+    border: 3px solid #fff;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.cta:hover {
+    color: #688EA6;
+    background-color: #fff;
 }
