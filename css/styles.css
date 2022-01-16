@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif
 }
 
 nav, 
@@ -30,7 +30,13 @@ nav {
 nav a {
     display: block;
     color: #fff;
-    padding: 0px 30px;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: large;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 .logo {
@@ -40,10 +46,10 @@ nav a {
 
 .hamburger_icon {
     display: flex;
-
+    padding: 13px;
 }
 
-@media (min-width: 700px){
+@media (min-width: 600px){
     nav {
         display: block;
         position: relative;
@@ -57,11 +63,6 @@ nav a {
 
     nav a {
     display: inline-block;
-    }
-
-    .logo {
-        position: relative;
-        text-align: left;
     }
 }
 
@@ -77,6 +78,16 @@ footer {
 h1 {
     margin: 0;
     padding: 70px;
+    color: #fff;
+}
+
+h2 {
+    margin: 0;
+    padding: 30px;
+}
+
+.h21 {
+    color: #688EA6;;
 }
 
 .cta {
@@ -84,7 +95,28 @@ h1 {
     text-transform: uppercase;
     border: 3px solid #fff;
     border-radius: 30px;
-    padding: 10px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.cta:hover {
+    color: #688EA6;
+    background-color: #fff;
+}
+
+.cta_view {
+    background-color: #f2f2f2;
+    color: #688EA6;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.cta_view:hover {
+    text-decoration: none;
+    background-color: #688EA6;
+    color: #f2f2f2;
 }
 
 .welcome {
@@ -94,15 +126,70 @@ h1 {
     background-repeat: no-repeat;
     text-align: center;
     background-position: center;
-    color: #fff;
 }
 
 .welcome_content {
     position: flex;
     text-align: center;
+    font-size: large;
 }
 
-.cta:hover {
-    color: #688EA6;
-    background-color: #fff;
+.popular_items {
+    color:#688EA6;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+}
+
+.product_spesific {
+    display: block;
+    border: 2px solid #688EA6;
+    padding: 10px 10px;
+    margin: 10px;
+}
+
+.jacket {
+    height: 200px;
+}
+
+@media (min-width: 600px){
+    .product_spesific {
+        display: inline-block;
+        border: 2px solid #688EA6;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .popular_items {
+        background-color: #f2f2f2;
+        color: #688EA6;
+    }
+
+}
+
+.reviews {
+    background-color: #688EA6;
+    color: #fff;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+}
+
+.reviews_content {
+    padding: 10px;
+    text-align: left;
+    margin: auto;
+    display: flex;
+    
+}
+
+.reviews_content div {
+    margin: 50px;
+}
+
+.reviews_content > * {
+    flex: 1;
+}
+
+.reviews_name {
+    display: block;
 }
