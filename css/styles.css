@@ -1,5 +1,10 @@
-body {
-    font-family:Arial, Helvetica, sans-serif
+@font-face {
+    font-family: 'adventures';
+    src: url(Fonts/Adventures-7BOVD.ttf);
+}
+
+main {
+    font-family: adventures;
 }
 
 nav, 
@@ -13,7 +18,7 @@ nav,
 }
 
 header {
-    background-color: #688EA6;
+    background-color: #4e6b7e;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -23,7 +28,7 @@ header {
 
 nav {
     position: relative;
-    background: #688EA6;
+    background: #4e6b7e;
     color: #fff;
 }
 
@@ -32,7 +37,8 @@ nav a {
     color: #fff;
     padding: 20px 30px;
     text-decoration: none;
-    font-size: large;
+    font-size: 25px;
+    font-family: adventures;
 }
 
 nav a:hover {
@@ -49,7 +55,15 @@ nav a:hover {
     padding: 13px;
 }
 
-@media (min-width: 600px){
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4e6b7e;
+    color: #fff;
+    font-family: adventures;
+  }
+
+@media (min-width: 789px){
     nav {
         display: block;
         position: relative;
@@ -66,48 +80,41 @@ nav a:hover {
     }
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #688EA6;
-    color: #fff;
-  }
-
 /* Home page */ 
 
 h1 {
     margin: 0;
     padding: 70px;
-    color: #fff;
 }
 
 h2 {
     margin: 0;
     padding: 30px;
+    font-size: 30px;
 }
 
 .h21 {
-    color: #688EA6;;
+    color: #4e6b7e;
 }
 
 .cta {
     color: #fff;
     text-transform: uppercase;
-    border: 3px solid #fff;
-    border-radius: 30px;
+    border: 5px solid #fff;
+    border-radius: 40px;
     padding: 15px;
     text-decoration: none;
-    font-size: x-large;
+    font-size: 35px;
 }
 
 .cta:hover {
-    color: #688EA6;
+    color: #4e6b7e;;
     background-color: #fff;
 }
 
 .cta_view {
-    background-color: #f2f2f2;
-    color: #688EA6;
+    background-color: #fff;
+    color: #4e6b7e;;
     text-decoration: none;
     border-radius: 30px;
     padding: 10px 20px;
@@ -115,8 +122,26 @@ h2 {
 
 .cta_view:hover {
     text-decoration: none;
-    background-color: #688EA6;
-    color: #f2f2f2;
+    background-color: #4e6b7e;;
+    color: #fff;
+}
+
+.cta_small {
+    color: #fff;
+    background-color: #d98e04;
+    border: 4px solid #d98e04;
+    font-size: 25px;
+    display: block;
+    text-decoration: none;
+    border-radius: 30px; 
+    text-align: center;
+    width: 150px;
+    margin: auto;
+}
+
+.cta_small:hover {
+    background-color: #fff;
+    color: #d98e04;
 }
 
 .welcome {
@@ -131,45 +156,34 @@ h2 {
 .welcome_content {
     position: flex;
     text-align: center;
-    font-size: large;
+    font-size: 35px;
+    color: #fff;
+    
 }
 
 .popular_items {
-    color:#688EA6;
-    background-color: #f2f2f2;
+    background-color: #fff;
     text-align: center;
     padding: 0px 0px 20px 0px;
 }
 
-.product_spesific {
+.product_spesific, 
+.product_list {
+    color: #4e6b7e;
     display: block;
-    border: 2px solid #688EA6;
+    border: 2px solid #d98e04;
     padding: 10px 10px;
-    margin: 10px;
+    margin: 15px auto;
+    width: 200px;
+    font-family: Arial;
 }
 
 .jacket {
     height: 200px;
 }
 
-@media (min-width: 600px){
-    .product_spesific {
-        display: inline-block;
-        border: 2px solid #688EA6;
-        padding: 10px;
-        margin: 5px;
-    }
-
-    .popular_items {
-        background-color: #f2f2f2;
-        color: #688EA6;
-        padding: 10px 30px;
-    }
-
-}
-
 .reviews {
-    background-color: #688EA6;
+    background-color: #4e6b7e;
     color: #fff;
     text-align: center;
     padding: 0px 0px 20px 0px;
@@ -178,13 +192,15 @@ h2 {
 .reviews_content {
     padding: 10px;
     text-align: left;
-    margin: auto;
     display: flex;
+    flex-direction: column;
+    font-size: 25px;
 }
 
 .reviews_content div {
-    margin: 50px;
+    margin: 30px;
 }
+
 
 .reviews_content > * {
     flex: 1;
@@ -193,4 +209,108 @@ h2 {
 .reviews_name {
     display: block;
     padding: 10px;
+}
+
+@media (min-width: 789px){
+    .product_spesific {
+        display: inline-block;
+        margin: 5px;
+        width: 200px;
+    }
+
+    .popular_items {
+        background-color: #fff;
+        color: #4e6b7e;
+        padding: 10px 30px;
+    }
+
+    .reviews_content {
+        display: inline-block;
+    }
+}
+
+
+/* Contact us */ 
+
+input,
+textarea {
+    border: 2px solid #4e6b7e;
+    border-radius: 5px;
+    margin: 10px 10px 10px 0px;
+    min-width: 300px;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+.contact {
+    color: #d98e04;
+    text-align: center;
+    font-size: 50px;
+    padding: 30px;
+    margin: 50px auto;
+}
+
+.contact_paragraph {
+    color: #4e6b7e;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contact_information,
+.message, 
+.shop {
+    text-align: center;
+    color: #d98e04;
+}
+
+.contact_info {
+    color: #4e6b7e;
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #4e6b7e;
+}
+
+.form > * {
+    flex: 1;
+    padding: 10px;
+}
+
+.image {
+    max-height: 30px;
+}
+
+.contact_content {
+    padding: 20px 0px;
+}
+
+@media (min-width: 789px){
+    .content {
+        display: flex;
+        margin: auto;
+    }
+
+    .contact_content {
+        flex: 1;
+        padding: 20px;
+       
+    }
+
+
+}
+
+
+/* Products */ 
+
+
+.product_list {
+    text-align: center;
 }
