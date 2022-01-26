@@ -83,8 +83,10 @@ footer {
 /* Home page */ 
 
 h1 {
-    margin: 0;
+    margin: auto;
     padding: 70px;
+    max-width: 1000px;
+    text-align: center;
 }
 
 h2 {
@@ -99,7 +101,6 @@ h2 {
 
 .cta {
     color: #fff;
-    text-transform: uppercase;
     border: 5px solid #fff;
     border-radius: 40px;
     padding: 15px;
@@ -110,20 +111,6 @@ h2 {
 .cta:hover {
     color: #4e6b7e;;
     background-color: #fff;
-}
-
-.cta_view {
-    background-color: #fff;
-    color: #4e6b7e;;
-    text-decoration: none;
-    border-radius: 30px;
-    padding: 10px 20px;
-}
-
-.cta_view:hover {
-    text-decoration: none;
-    background-color: #4e6b7e;;
-    color: #fff;
 }
 
 .cta_small {
@@ -158,7 +145,6 @@ h2 {
     text-align: center;
     font-size: 35px;
     color: #fff;
-    
 }
 
 .popular_items {
@@ -195,6 +181,7 @@ h2 {
     display: flex;
     flex-direction: column;
     font-size: 25px;
+    max-width: 1000px;
 }
 
 .reviews_content div {
@@ -229,7 +216,6 @@ h2 {
     }
 }
 
-
 /* Contact us */ 
 
 input,
@@ -244,9 +230,9 @@ textarea {
     min-height: 150px;
 }
 
-.contact {
-    color: #d98e04;
-    text-align: center;
+.contact,
+.shop,
+.about {
     font-size: 50px;
     padding: 30px;
     margin: 50px auto;
@@ -258,9 +244,12 @@ textarea {
     font-size: 25px;
 }
 
+.contact,
 .contact_information,
 .message, 
-.shop {
+.shop, 
+.about, 
+.jacket_name {
     text-align: center;
     color: #d98e04;
 }
@@ -291,26 +280,80 @@ textarea {
 .contact_content {
     padding: 20px 0px;
 }
+.contact_page {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
 
-@media (min-width: 789px){
-    .content {
-        display: flex;
-        margin: auto;
-    }
-
-    .contact_content {
-        flex: 1;
-        padding: 20px;
-       
-    }
-
-
+.contact_page > * {
+    flex: 1;
 }
 
 
-/* Products */ 
+@media (min-width: 789px){
+    .contact_page {
+        flex-direction: row;
+        margin: auto;
+        gap: 30px;
+        max-width: 1000px;
+    }
+}
 
+/* Products */ 
 
 .product_list {
     text-align: center;
+}
+
+.our_jackets {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap:20px;
+        max-width: 1000px;
+        margin: auto;
+}
+
+
+@media (min-width: 789px) {
+    .our_jackets {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+/* About us */
+
+
+
+/* Jackets */ 
+
+.rainydays_product{
+    display: flex;
+    max-width: 1000px;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.rainydays_product > * {
+    flex: 1;
+}
+
+.product_image {
+    width: 100%;
+}
+
+.jacket_spesific {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+@media (min-width: 600px) {
+    .rainydays_product {
+        flex-direction: row;
+        margin: 30px auto;
+        gap: 30px;
+    }
 }
