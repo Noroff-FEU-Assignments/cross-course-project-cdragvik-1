@@ -74,6 +74,83 @@ h2 {
     text-align: center;
     color: #CF7F07;
 }
+.cta {
+    color: #fff;
+    border: 1px solid #4e6b7e;
+    border-radius: 40px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 35px;
+    background-color: #4e6b7e;
+    width: 300px;
+    align-items: center;
+    margin: 200px auto;
+    display: block;
+}
+
+.cta:hover {
+    color: #4e6b7e;
+    background-color: #fff;
+    border: 1px solid #4e6b7e;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.cta_small {
+    color: #fff;
+    background-color: #CF7F07;
+    border: 1px solid #CF7F07;
+    font-size: 25px;
+    display: block;
+    text-decoration: none;
+    border-radius: 30px; 
+    text-align: center;
+    width: 150px;
+    margin: auto;
+    padding: 3px; 
+}
+
+.cta_small:hover {
+    background-color: #fff;
+    color: #CF7F07;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.cta_large, 
+.cta_large_o {
+    color: #fff;
+    background-color: #4e6b7e;
+    border: 1px solid #4e6b7e;
+    font-size: 25px;
+    display: block;
+    text-decoration: none;
+    border-radius: 30px; 
+    text-align: center;
+    width: 250px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.cta_large:hover,
+.cta_large_o:hover {
+    color: #4e6b7e;
+    background-color: #fff;
+    border: 1px solid #4e6b7e;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.cta_large_o {
+    background-color: #CF7F07;
+    border: #CF7F07;
+}
+
+.cta_large_o:hover {
+    background-color: #fff;
+    border: 1px solid #CF7F07;
+    color: #CF7F07;
+}
 
 footer {
     text-align: center;
@@ -117,49 +194,6 @@ footer {
     color: #fff;
 }
 
-.cta {
-    color: #4e6b7e;
-    border: 5px solid #4e6b7e;
-    border-radius: 40px;
-    padding: 15px;
-    text-decoration: none;
-    font-size: 35px;
-    background-color: #fff;
-    display: block;
-    width: 300px;
-    align-items: center;
-    margin: 100px auto;
-
-}
-
-.cta:hover {
-    color: #fff;
-    background-color: #4e6b7e;
-    border: 5px solid #4e6b7e;
-    transition-property: background-color;
-    transition-duration: 1s;
-}
-
-.cta_small {
-    color: #fff;
-    background-color: #CF7F07;
-    border: 4px solid #CF7F07;
-    font-size: 25px;
-    display: block;
-    text-decoration: none;
-    border-radius: 30px; 
-    text-align: center;
-    width: 150px;
-    margin: auto;
-}
-
-.cta_small:hover {
-    background-color: #fff;
-    color: #CF7F07;
-    transition-property: background-color;
-    transition-duration: 1s;
-}
-
 .welcome {
     background-image: url("../images/homepage-background.jpg");
     min-height: 1000px;
@@ -172,8 +206,9 @@ footer {
 .welcome_paragraph {
     font-size: 50px;
     color: #fff;
-    padding: 50px;
+    padding-top: 120px;
     margin: auto;
+    max-width: 1000px;
 }
 
 .popular_items,
@@ -339,7 +374,19 @@ textarea {
 
 /* About us */
 
+.about_img {
+    height: 300px;
+    margin: auto;
 
+}
+
+.about_us {
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+}
 
 /* Jackets */ 
 
@@ -384,6 +431,7 @@ textarea {
     background-color: #fff;
     position: absolute;
     max-width: 1000px;    
+    max-height: 800px;
     margin: auto;
     top: 50%;
     left: 50%;
@@ -414,9 +462,12 @@ textarea {
 
 .cart:hover {
     color: #fff;
-    background-color: #CF7F07;;
+    background-color: #CF7F07;
 }
 
+.success_icon {
+    height: 300px;
+}
 
 /* Your order */ 
 
