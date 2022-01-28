@@ -63,7 +63,7 @@ h1 {
     max-width: 1000px;
     text-align: center;
     font-size: 50px;
-    margin: 50px auto;
+    margin: 30px auto;
     color: #CF7F07;
 }
 
@@ -76,7 +76,7 @@ h2 {
 }
 .cta {
     color: #fff;
-    border: 1px solid #4e6b7e;
+    border: 1px solid #fff;
     border-radius: 40px;
     padding: 15px;
     text-decoration: none;
@@ -217,7 +217,7 @@ footer {
     display: block;
     border: 2px solid #CF7F07;
     padding: 10px 10px;
-    margin: 15px auto;
+    margin: 5px auto;
 }
 
 .popular_items_div {
@@ -226,6 +226,7 @@ footer {
     grid-gap:20px;
     max-width: 1000px;
     margin: auto;
+    padding: 20px;
 }
 
 .jacket_img {
@@ -342,8 +343,8 @@ textarea {
 @media (min-width: 789px){
     .contact_page,
     .complete {
-        flex-direction: row;
         margin: auto;
+        flex-direction: row;
         gap: 30px;
         max-width: 1000px;
     
@@ -375,18 +376,37 @@ textarea {
 /* About us */
 
 .about_img {
-    height: 300px;
-    margin: auto;
-
+    display: none;
 }
 
 .about_us {
-    display: grid; 
-    grid-template-rows: 1fr 1fr;
-    max-width: 1000px;
+    
     margin: auto;
-    align-items: center;
+    max-width: 1000px;
 }
+
+.about_images {
+    display: flex;
+    flex-direction: row;
+  
+    margin: auto;   
+}
+
+.about {
+    padding: 20px;    
+    background-color: #4e6b7e;
+    color: #fff;
+    text-align: left;
+}
+
+@media (min-width: 789px) {
+    .about_img {
+        display: block;
+        height: 300px;
+        padding: 20px;
+    }
+}
+
 
 /* Jackets */ 
 

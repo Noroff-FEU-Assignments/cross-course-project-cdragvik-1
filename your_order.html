@@ -27,21 +27,21 @@
   <main>
     <h1> Your order </h1>  
     <section class="complete">
-    <div class="order_complete">
-        <div class=order_example>
-        <img src="images/example_image.jpg" class="example">
-        <p class="text">Name of jacket</p>
-        <p class="text">$ 00.00</p>
-        </div>  
-        <div class=order_example>
-        <img src="images/example_image.jpg" class="example">
-        <p class="text">Name of jacket</p>
-        <p class="text">$ 00.00</p>
-        </div>  
-        <p class="text">Total sum: $ 00.00</p>
-    </div>
-        
-        <div class="order_complete">
+      <div class="order_complete">
+        <h2>Items in your cart</h2>   
+          <div class=order_example>
+            <img src="images/example_image.jpg" class="example">
+            <p class="text">Name of jacket</p>
+            <p class="text">$ 00.00</p>
+          </div>  
+          <div class=order_example>
+            <img src="images/example_image.jpg" class="example">
+            <p class="text">Name of jacket</p>
+            <p class="text">$ 00.00</p>
+          </div>  
+            <p class="text">Total sum: $ 00.00</p>
+      </div>
+      <div class="order_complete">
         <h2>Shipping information</h2>
             <div class="form">
                 <label for="name">Full name</label>
@@ -53,13 +53,15 @@
                 <label for="zip/postal">ZIP/Postal</label>
                 <input type="number" id="zip/postal" name="zip/postal">
             </div>  
-            <div>
-                <h2 class="shipping">Billing information</h2>
+        <div>
+        <h2>Billing information</h2>
                 <div class="form">
                 <label for="address">Address</label> 
                 <input type="text" id="address" name="address"/>
                 <label for="city">City</label>
                 <input type="text" id="city" name="city"/>
+                <label for="email"> Email address</label>
+                <input type="email" id="email" name="email">
                 <label for="zip/postal">ZIP/Postal</label>
                 <input type="number" id="zip/postal" name="zip/postal">
                 </div>
@@ -71,3 +73,9 @@
 
 
   </main>
+
+  <footer>Copyright &copy;</footer>
+
+</body>
+
+</html>
