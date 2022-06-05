@@ -504,6 +504,10 @@ textarea {
     background-color: #a74e00;
 }
 
+.secondcart{
+    display: none;
+}
+
 .success_icon {
     height: 300px;
 }
