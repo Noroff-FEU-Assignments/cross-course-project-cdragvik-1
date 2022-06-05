@@ -51,20 +51,26 @@
                 <p>+00 0000 0000</p>
             </div>
         </div>
-        <div class="contact_content">
+            <form id="form" class="form">
             <h2>Send us a message</h2>
-            <div class="form">
-                <label for="name">Full name</label>
-                <input type="text" id="name" name="name"/>
-                <label for="phonenumber">Phone number</label> 
-                <input type="number" id="phonenumber" name="phonenumber"/>
-                <label for="email">Email address</label>
-                <input type="email" id="email" name="email"/>
-                <label for="message">Write your message here...</label>
-                <textarea id="message" name="message"></textarea>
-            </div>
-            <a class="cta_small">Submit</a>
-        </div>
+                <div class="contact">
+                    <label for="name">Name
+                    <input type="text" id="name" name="name"/></label>
+                    <div class="error-message" id="nameError">Please enter your name</div>
+                </div>
+                <div class="contact">
+                    <label for="emial">Email address
+                    <input type="email" id="email" name="email"/></label>
+                    <div class="error-message" id="emailError">Please enter a valid email address</div>
+                </div>               
+                <div class="contact">
+                    <label for="subject">Message
+                    <input type="text" id="subject" name="subject"/></label>
+                    <div class="error-message" id="subjectError">The subject must be at least 10 characters</div>
+                </div>
+                <button class="cta_small">Submit</button>
+            </form>
+        <script src="js/contact.js"></script>
     </section>
   </main>
   <footer>Copyright &copy;</footer>
