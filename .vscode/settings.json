@@ -1,10 +1,8 @@
 {
-    "liveServer.settings.port": 5501,
-    "liveServer.settings.root": "/",
-    "liveServer.settings.CustomBrowser": "chrome",
     "liveServer.settings.https": {
-      "enable": true,
-      "cert": "/Brukere/christianenanettedragvik/Dokumenter/GitHub/cross-course-project-cdragvik-1/localhost.pem",
-      "key": "/Brukere/christianenanettedragvik/Dokumenter/GitHub/cross-course-project-cdragvik-1/localhost.key",
-      "passphrase": "pass123"
-}
+    "enable": true, //set it true to enable the feature.
+    "cert": "/Documents/GitHub/cross-course-project-cdragvik-1/primary.crt", //full path of the certificate
+    "key": "/Documents/GitHub/cross-course-project-cdragvik-1/server.key", //full path of the private key
+    "passphrase": "pass123"
+    }
+    }
