@@ -1,4 +1,4 @@
-const detailsContainer = document.querySelector(".our_jackets");
+const detailsContainer = document.querySelector(".jacket_spesific");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -20,6 +20,9 @@ async function details() {
 
         console.log(results);
 
+        newPageTitle = results.name;
+        document.title = newPageTitle;
+
         createHtml(results);
 
     } catch(error) {
@@ -31,5 +34,12 @@ async function details() {
 details();
 
 function createHtml(results) {
-    detailsContainer.innerHTML += `<h1>${results.name}</h1>`;
+    detailsContainer.innerHTML += `<h1>${results.name}</h1>
+                                    <img src="${results.images[0].src}" alt="${results.name}" class="product_image">
+                                    <h2>${results.prices.price} kr</h2>
+                                    <p>${results.description}</p>
+                                    <a href="added_to_cart.html"><button class="cta_small">Add to cart</button></a>`;
 }
+
+
+
