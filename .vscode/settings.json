@@ -1,8 +1,10 @@
 {
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.root": "/",
+    "liveServer.settings.CustomBrowser": "chrome",
     "liveServer.settings.https": {
-    "enable": true, 
-    "cert": "D:\\https\\primary.crt", 
-    "key": "D:\\https\\private.key", 
-    "passphrase": "12345"
-    }
+      "enable": true,
+      "cert": "/Brukere/christianenanettedragvik/Dokumenter/GitHub/cross-course-project-cdragvik-1/localhost.pem",
+      "key": "/Brukere/christianenanettedragvik/Dokumenter/GitHub/cross-course-project-cdragvik-1/localhost.key",
+      "passphrase": "pass123"
 }
