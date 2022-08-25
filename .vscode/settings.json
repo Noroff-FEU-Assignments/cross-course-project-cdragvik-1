@@ -1,7 +1,7 @@
 {
     "liveServer.settings.https": {
     "enable": true, //set it true to enable the feature.
-    "cert": "/Documents/GitHub/cross-course-project-cdragvik-1/primary.crt", //full path of the certificate
+    "cert": "/Documents/GitHub/cross-course-project-cdragvik-1/server.crt", //full path of the certificate
     "key": "/Documents/GitHub/cross-course-project-cdragvik-1/server.key", //full path of the private key
     "passphrase": "pass123"
     }
