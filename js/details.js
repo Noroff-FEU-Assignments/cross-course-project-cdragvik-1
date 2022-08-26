@@ -7,15 +7,13 @@ const id = params.get("id");
 console.log(id);
 
 const url = "http://rainy-days.local/wp-json/wc/store/products/" + id;
-const proxy = "https://noroffcors.herokuapp.com/";
-const productUrl = proxy + url;
 
 console.log(url);
 
 async function details() {
 
     try {
-        const response = await fetch(productUrl); 
+        const response = await fetch(url); 
         const results = await response.json();
 
         console.log(results);
