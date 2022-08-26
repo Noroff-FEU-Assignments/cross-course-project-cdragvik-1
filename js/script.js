@@ -23,7 +23,7 @@ function createHTML(products){
         <img src="${product.images[0].src}" alt="${product.name}" class="jacket_img">
         <h3>${product.name}</h3> 
         <p>${product.prices.price} kr </p>
-        <a href="http://127.0.0.1:5500/product_specific.html?id=${product.id}"><button class="cta_small">View more</button></a>
+        <a href="product_specific.html?id=${product.id}"><button class="cta_small">View more</button></a>
         </div>`;
     })
 }
