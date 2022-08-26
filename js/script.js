@@ -1,4 +1,4 @@
-const url = "http://rainy-days.local/wp-json/wc/store/products";
+const url = "https://noroff-cors.herokuapp.com/http://rainy-days.local/wp-json/wc/store/products";
 const productContainer = document.querySelector(".our_jackets");
 
 async function getProducts(){
