@@ -69,7 +69,7 @@ h1 {
 
 h2 {
     margin: 0;
-    padding: 30px;
+    padding-top: 20px;
     font-size: 40px;
     text-align: center;
     color: #a74e00;
@@ -109,7 +109,7 @@ p {
     color: #fff;
     background-color: #a74e00;
     border: 1px solid #a74e00;
-    font-size: 30px;
+    font-size: 20px;
     display: block;
     text-decoration: none;
     border-radius: 30px; 
@@ -117,7 +117,9 @@ p {
     width: 150px;
     margin: auto;
     padding: 3px; 
+    margin-bottom: 20px;
 }
+
 
 .cta_small:hover {
     background-color: #fff;
@@ -378,10 +380,12 @@ textarea {
 
 .our_jackets {
         display: grid;
+        flex-direction: column;
         grid-template-columns: 1fr;
         grid-gap:20px;
         max-width: 1000px;
         margin: auto;
+        padding-bottom: 20px;
 }
 
 
@@ -432,7 +436,7 @@ textarea {
 .rainydays_product{
     display: flex;
     max-width: 1000px;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom: 50px;
 }
 
@@ -441,14 +445,14 @@ textarea {
 }
 
 .product_image {
-    width: 100%;
+    height: 400px;
+    margin: auto;
 }
 
 .jacket_spesific {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 5px;
+    display: grid;
+    margin: auto;
+    max-width: 1000px;
 }
 
 @media (min-width: 600px) {
