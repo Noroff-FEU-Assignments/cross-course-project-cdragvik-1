@@ -1,9 +1,12 @@
-const url = "https://cors-anywhere.herokuapp.com/http://rainy-days.local/wp-json/wc/store/products";
+const url = "http://rainy-days.local/wp-json/wc/store/products";
+const proxy = "https://noroffcors.herokuapp.com/";
+const productsUrl = proxy + url;
+
 const productContainer = document.querySelector(".our_jackets");
 
 async function getProducts(){
     try{
-        const response = await fetch(url);
+        const response = await fetch(productsUrl);
         const getResults = await response.json();
         createHTML(getResults);
     }
