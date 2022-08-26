@@ -1,6 +1,4 @@
 {
-    "liveServer.settings.port": 5501
-} {
     "liveServer.settings.port": 5501,
     "liveServer.settings.root": "/",
     "liveServer.settings.CustomBrowser": "chrome",
@@ -10,4 +8,4 @@
       "key": "/Users/christianenanettedragvik/Documents/GitHub/cross-course-project-cdragvik-1/localhost.key",
       "passphrase": "pass123"
     }
-  }
+}
