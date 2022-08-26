@@ -1,4 +1,4 @@
-const url = "http://rainy-days.local/wp-json/wc/store/products";
+const url = "https://rainydays.cdragvik.one/wp-json/wc/store/products";
 const productContainer = document.querySelector(".our_jackets");
 
 async function getProducts(){
@@ -23,7 +23,7 @@ function createHTML(products){
         <img src="${product.images[0].src}" alt="${product.name}" class="jacket_img">
         <h3>${product.name}</h3> 
         <p>${product.prices.price} kr </p>
-        <a href="http://127.0.0.1:5501/product_specific.html?id=${product.id}"><button class="cta_small">View more</button></a>
+        <a href="http://127.0.0.1:5500/product_specific.html?id=${product.id}"><button class="cta_small">View more</button></a>
         </div>`;
     })
 }
